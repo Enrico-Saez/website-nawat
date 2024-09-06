@@ -1,10 +1,24 @@
 ---
 import Layout from '../layouts/Layout.astro';
 import Navbar from '../components/svelte/Navbar.svelte';
+import MembroCTA from '../components/MembroCTA.astro';
+import NawatAreas from '../components/svelte/NawatAreas.svelte';
 ---
 
 <Layout title="Nawat Games">
 	<main>
-		<Navbar client:load />
+		<Navbar client:only="svelte" />
+		<div class="mx-auto max-w-5xl py-32">
+			<h1 class="text-6xl font-bold">Apaixonados pela<br />criação de jogos</h1>
+			<p class="mt-5 max-w-lg text-text/70">
+				Somos o núcleo de desenvolvimento de jogos do IMT. Unidos pela vontade de produzir...
+			</p>
+			<div class="mt-10 flex space-x-4">
+				<button class="bg-secondary px-7 py-3.5 text-text">Nossos Jogos</button>
+				<button class="bg-primary px-7 py-3.5 text-neutral-900">Torne-se um Membro</button>
+			</div>
+		</div>
+		<NawatAreas client:only="svelte" />
+		<MembroCTA />
 	</main>
 </Layout>

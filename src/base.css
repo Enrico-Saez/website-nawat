@@ -1,13 +1,27 @@
+@import '@fontsource/inter/100.css';
+@import '@fontsource/inter/200.css';
+@import '@fontsource/inter/300.css';
+@import '@fontsource/inter/400.css';
+@import '@fontsource/inter/500.css';
+@import '@fontsource/inter/600.css';
+@import '@fontsource/inter/700.css';
+@import '@fontsource/inter/800.css';
+@import '@fontsource/inter/900.css';
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 @layer components {
-    button {
-        @apply rounded-lg
-    }
+	button {
+		@apply rounded-xl;
+	}
 
-    .nav-link {
-        @apply font-medium
-    }
+	.nav-down {
+		@apply border-text/30 bg-black/30 backdrop-blur-md;
+	}
+
+	.nav-link {
+		@apply shadow-accent transition-all duration-200 hover:text-accent hover:text-shadow-lg;
+	}
 }
