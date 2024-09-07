@@ -4,7 +4,9 @@ import tailwind from '@astrojs/tailwind';
 
 import svelte from '@astrojs/svelte';
 
+import db from '@astrojs/db';
+
 // https://astro.build/config
 export default defineConfig({
-  integrations: [tailwind(), svelte()]
+  integrations: [tailwind(), svelte(), db()]
 });

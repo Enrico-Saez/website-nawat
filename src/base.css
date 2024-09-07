@@ -23,6 +23,6 @@
 	}
 
 	.nav-link {
-		@apply shadow-accent transition-all duration-200 hover:text-accent hover:text-shadow-lg;
+		@apply transition duration-200 hover:text-accent;
 	}
 }
