@@ -1,10 +1,10 @@
-<div class="mx-auto flex h-[50rem] max-w-5xl items-center justify-center">
+<div class="mx-auto max-w-5xl py-32">
 	<div>
 		<div class="text-center">
 			<h1 class="text-4xl font-black">Áreas de Desenvolvimento</h1>
 			<p>O desenvolvimento na Nawat é multi...</p>
 		</div>
-		<div class="mt-24 space-y-4">
+		<div class="mt-24 h-[28rem] space-y-4">
 			<div
 				class="group h-[4.2rem] w-[28rem] overflow-hidden rounded-xl border border-blue-400 p-5 transition-all duration-300 hover:h-40"
 			>
@@ -29,7 +29,7 @@
 				</p>
 			</div>
 			<div
-				class="group h-[4.2rem] w-[28rem] overflow-hidden rounded-xl border border-green-400 p-5 transition-all duration-300 hover:h-40"
+				class="group h-[4.2rem] w-[28rem] overflow-hidden rounded-xl border border-green-400 p-5 transition-all duration-300 hover:h-40 hover:bg-green-500/10"
 			>
 				<div class="flex items-center justify-between">
 					<span class="text-xl font-black">Game Programming</span>

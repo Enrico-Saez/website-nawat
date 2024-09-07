@@ -1,0 +1,12 @@
+---
+import Layout from '../layouts/Layout.astro';
+import SeletorMembros from '../components/svelte/SeletorMembros.svelte';
+import MembroCTA from '../components/MembroCTA.astro';
+---
+
+<Layout title="Nossos membros | Nawat Games">
+	<main>
+		<SeletorMembros client:load />
+		<MembroCTA />
+	</main>
+</Layout>
