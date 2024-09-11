@@ -17,7 +17,7 @@
 </script>
 
 <nav
-	class="fixed top-0 z-10 w-full border-b px-4 transition-all duration-300"
+	class="fixed top-0 z-20 w-full border-b px-4 transition-all duration-300"
 	class:nav-down={navDown}
 	class:border-transparent={!navDown}
 >

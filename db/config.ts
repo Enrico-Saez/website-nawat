@@ -1,12 +1,15 @@
 import { defineDb, defineTable, column } from 'astro:db';
 
-const Comment = defineTable({
+const Member = defineTable({
 	columns: {
-		author: column.text(),
-		body: column.text()
+		id: column.number({ primaryKey: true, autoIncrement: true }),
+		url: column.text({ unique: true }),
+		name: column.text(),
+		entry: column.date(),
+		departure: column.date()
 	}
 });
 
 export default defineDb({
-	tables: { Comment }
+	tables: { Member }
 });

@@ -4,22 +4,62 @@
 	let selectedButton: number | null = null;
 	let searchString: string = '';
 
+	let area: string = 'Todos os membros';
+	let description: string =
+		'Todos os membros que já passaram pela Nawat Games, contribuindo com suas ideias e seus trabalhos.';
+	let bgColor: string = 'bg-secondary';
+
 	function onButtonClicked(i: number) {
 		if (selectedButton === i) {
 			selectedButton = null;
+			area = 'Todos os membros';
+			description =
+				'Todos os membros que já passaram pela Nawat Games, contribuindo com suas ideias e seus trabalhos.';
+			bgColor = 'bg-secondary';
 			return;
+		}
+		switch (i) {
+			case 0:
+				area = 'Game Design';
+				description =
+					'Desenvolvem as mecânicas e o conceito dos jogos, garantindo uma experiência divertida e envolvente para os jogadores.';
+				bgColor = 'bg-blue-800';
+				break;
+			case 1:
+				area = 'Game Programming';
+				description =
+					'Responsáveis por transformar ideias em realidade, desenvolvendo a lógica e o código que dão vida aos nossos jogos.';
+				bgColor = 'bg-green-800';
+				break;
+			case 2:
+				area = 'Game Art';
+				description =
+					'Criam o visual dos nossos jogos, desenhando personagens, cenários e todos os elementos que compõem o universo visual.';
+				bgColor = 'bg-rose-800';
+				break;
+			case 3:
+				area = 'Game Sound';
+				description =
+					'Dão voz e atmosfera aos nossos jogos, criando trilhas sonoras e efeitos que enriquecem a experiência do jogador.';
+				bgColor = 'bg-orange-800';
+				break;
+			case 4:
+				area = 'Design Visual';
+				description =
+					'Cuida da identidade visual da Nawat Games, criando materiais gráficos e definindo o estilo que representa a nossa marca.';
+				bgColor = 'bg-fuchsia-800';
+				break;
 		}
 		selectedButton = i;
 	}
 </script>
 
-<div class="bg-secondary pb-24 pt-32">
+<div class="{bgColor} pb-24 pt-32 transition duration-300">
 	<div class="text-center">
 		<span class="text-xs font-light uppercase tracking-wider">CONHEÇA NOSSOS TALENTOS</span>
-		<h1 class="mt-1 text-4xl font-black">Todos os membros</h1>
+		<h1 class="mt-1 text-4xl font-black">{area}</h1>
 		<p class="mx-auto mt-5 max-w-lg">
-			Todos os membros que já passaram pela Nawat Games, contribuindo com suas ideias e seus
-			trabalhos.
+			{description}
 		</p>
 	</div>
 </div>
@@ -87,11 +127,17 @@
 			{#each Object.entries(membros) as [membro, info]}
 				{#if (selectedButton != null && info.areas.includes(selectedButton) && info.nome.includes(searchString)) || (!(selectedButton != null) && info.nome.includes(searchString))}
 					<a
-						class="fade-in h-72 w-full bg-gradient-to-br from-blue-500/70 to-green-500/70 hover:-translate-y-2"
+						class="fade-in h-72 w-full hover:-translate-y-2 hover:shadow-2xl hover:shadow-primary/50"
 						href="/membro/{membro}"
 					>
-						<div class="h-3/4"></div>
-						<div class="h-1/4 w-full bg-black/70 px-4 py-2.5">
+						<div
+							class="flex h-3/4 items-center justify-center bg-gradient-to-br from-blue-500/70 to-green-500/70"
+						>
+							<div
+								class="size-36 rounded-full border-4 border-text bg-neutral-400 shadow-md shadow-black/30"
+							></div>
+						</div>
+						<div class="h-1/4 w-full bg-black/80 px-4 py-2.5">
 							<span class="font-medium tracking-wide">{info.nome}</span>
 						</div>
 					</a>
