@@ -2,19 +2,24 @@
 import Layout from '../layouts/Layout.astro';
 import MembroCTA from '../components/MembroCTA.astro';
 import NawatAreas from '../components/svelte/NawatAreas.svelte';
+import { Image } from 'astro:assets';
+import gradientBg from '../../public/images/Gradient01.png';
 ---
 
 <Layout title="Nawat Games">
 	<main>
 		<div class="mx-auto max-w-5xl pb-32 pt-48">
+			<Image src={gradientBg} alt="" />
 			<h1 class="text-6xl font-bold">Apaixonados pela<br />criação de jogos</h1>
 			<p class="mt-5 max-w-lg text-text/70">
 				Somos o núcleo de desenvolvimento de jogos do Instituto Mauá de Tecnologia. Unidos pela
 				vontade de produzir...
 			</p>
 			<div class="mt-10 flex space-x-4">
-				<button class="bg-secondary px-7 py-3.5 text-text">Nossos Jogos</button>
-				<button class="bg-primary px-7 py-3.5 text-neutral-900">Torne-se um Membro</button>
+				<button class="bg-secondary px-7 py-3.5 font-medium text-text">Nossos Jogos</button>
+				<button class="bg-primary px-7 py-3.5 font-medium text-neutral-900"
+					>Torne-se um Membro</button
+				>
 			</div>
 		</div>
 		<NawatAreas client:only="svelte" />

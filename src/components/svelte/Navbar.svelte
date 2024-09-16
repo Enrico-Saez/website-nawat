@@ -56,7 +56,7 @@
 			<button
 				class="group flex items-center space-x-3 bg-primary px-5 py-1.5 text-sm font-medium text-neutral-900 transition duration-300 hover:bg-primary/20"
 			>
-				<span class="transition group-hover:text-text">Área de Membros</span>
+				<span class="transition group-hover:text-text">Acesse seu Perfil</span>
 				<span
 					class="relative flex size-8 items-center justify-center rounded-full border-2 border-neutral-900 transition group-hover:border-text"
 				>

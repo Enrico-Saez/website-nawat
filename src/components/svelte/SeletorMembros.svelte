@@ -57,7 +57,7 @@
 <div class="{bgColor} pb-24 pt-32 transition duration-300">
 	<div class="text-center">
 		<span class="text-xs font-light uppercase tracking-wider">CONHEÇA NOSSOS TALENTOS</span>
-		<h1 class="mt-1 text-4xl font-black">{area}</h1>
+		<h1 class="mt-4 text-4xl font-extrabold">{area}</h1>
 		<p class="mx-auto mt-5 max-w-lg">
 			{description}
 		</p>

@@ -10,164 +10,177 @@
 </script>
 
 <div class="mx-auto max-w-5xl py-32">
-	<div>
-		<div class="text-center">
-			<h1 class="text-4xl font-black">Áreas de Desenvolvimento</h1>
-			<p>O desenvolvimento na Nawat é multi...</p>
-		</div>
-		<div class="mt-24 flex h-[28rem] items-center justify-between">
-			<div class="space-y-4">
-				<div
-					aria-hidden="true"
-					on:mouseenter={() => {
-						index = 0;
-					}}
-					class="group h-[4.2rem] w-[28rem] overflow-hidden rounded-xl border border-blue-400 p-5 transition-all duration-300 hover:h-40"
-				>
-					<div class="flex items-center justify-between">
-						<span class="text-xl font-black">Game Design</span>
-						<svg
-							xmlns="http://www.w3.org/2000/svg"
-							fill="none"
-							viewBox="0 0 24 24"
-							stroke-width="1.5"
-							stroke="currentColor"
-							class="size-6 transition duration-300 group-hover:rotate-90"
-						>
-							<path stroke-linecap="round" stroke-linejoin="round" d="m8.25 4.5 7.5 7.5-7.5 7.5" />
-						</svg>
-					</div>
-					<p
-						class="mt-4 text-[0.925rem] opacity-0 transition delay-500 duration-500 group-hover:opacity-100"
+	<div class="mx-auto max-w-3xl text-center">
+		<h1 class="text-4xl font-extrabold">Áreas de Desenvolvimento</h1>
+		<p class="mt-4 text-text/70">
+			Na Nawat Games, criamos experiências interativas <span class="text-primary"
+				>de forma colaborativa</span
+			>, unindo diversas áreas para transformar ideias em jogos. Cada projeto é uma oportunidade de
+			aprender, inovar e crescer juntos.
+		</p>
+	</div>
+	<div class="mt-16 flex h-[28rem] items-center justify-between">
+		<div class="space-y-4">
+			<div
+				aria-hidden="true"
+				on:mouseenter={() => {
+					index = 0;
+				}}
+				class="group h-[4.2rem] w-[28rem] overflow-hidden rounded-xl border border-blue-400 p-5 transition-all duration-300 hover:h-40 hover:bg-blue-500/10"
+			>
+				<div class="flex items-center justify-between">
+					<span class="text-xl font-extrabold">Game Design</span>
+					<svg
+						xmlns="http://www.w3.org/2000/svg"
+						fill="none"
+						viewBox="0 0 24 24"
+						stroke-width="1.5"
+						stroke="currentColor"
+						class="size-6 transition duration-300 group-hover:rotate-90"
 					>
-						Desenvolvem as mecânicas e o conceito dos jogos, garantindo uma experiência divertida e
-						envolvente para os jogadores.
-					</p>
+						<path stroke-linecap="round" stroke-linejoin="round" d="m8.25 4.5 7.5 7.5-7.5 7.5" />
+					</svg>
 				</div>
-				<div
-					aria-hidden="true"
-					on:mouseenter={() => {
-						index = 1;
-					}}
-					class="group h-[4.2rem] w-[28rem] overflow-hidden rounded-xl border border-green-400 p-5 transition-all duration-300 hover:h-40 hover:bg-green-500/10"
+				<p
+					class="mt-4 text-[0.925rem] opacity-0 transition delay-500 duration-500 group-hover:opacity-100"
 				>
-					<div class="flex items-center justify-between">
-						<span class="text-xl font-black">Game Programming</span>
-						<svg
-							xmlns="http://www.w3.org/2000/svg"
-							fill="none"
-							viewBox="0 0 24 24"
-							stroke-width="1.5"
-							stroke="currentColor"
-							class="size-6 transition duration-300 group-hover:rotate-90"
-						>
-							<path stroke-linecap="round" stroke-linejoin="round" d="m8.25 4.5 7.5 7.5-7.5 7.5" />
-						</svg>
-					</div>
-					<p
-						class="mt-4 text-[0.925rem] opacity-0 transition delay-500 duration-500 group-hover:opacity-100"
-					>
-						Responsáveis por transformar ideias em realidade, desenvolvendo a lógica e o código que
-						dão vida aos nossos jogos.
-					</p>
-				</div>
-				<div
-					aria-hidden="true"
-					on:mouseenter={() => {
-						index = 2;
-					}}
-					class="group h-[4.2rem] w-[28rem] overflow-hidden rounded-xl border border-rose-400 p-5 transition-all duration-300 hover:h-40 hover:bg-rose-500/10"
-				>
-					<div class="flex items-center justify-between">
-						<span class="text-xl font-black">Game Art</span>
-						<svg
-							xmlns="http://www.w3.org/2000/svg"
-							fill="none"
-							viewBox="0 0 24 24"
-							stroke-width="1.5"
-							stroke="currentColor"
-							class="size-6 transition duration-300 group-hover:rotate-90"
-						>
-							<path stroke-linecap="round" stroke-linejoin="round" d="m8.25 4.5 7.5 7.5-7.5 7.5" />
-						</svg>
-					</div>
-					<p
-						class="mt-4 text-[0.925rem] opacity-0 transition delay-500 duration-500 group-hover:opacity-100"
-					>
-						Criam o visual dos nossos jogos, desenhando personagens, cenários e todos os elementos
-						que compõem o universo visual.
-					</p>
-				</div>
-				<div
-					aria-hidden="true"
-					on:mouseenter={() => {
-						index = 3;
-					}}
-					class="group h-[4.2rem] w-[28rem] overflow-hidden rounded-xl border border-orange-400 p-5 transition-all duration-300 hover:h-40"
-				>
-					<div class="flex items-center justify-between">
-						<span class="text-xl font-black">Game Sound</span>
-						<svg
-							xmlns="http://www.w3.org/2000/svg"
-							fill="none"
-							viewBox="0 0 24 24"
-							stroke-width="1.5"
-							stroke="currentColor"
-							class="size-6 transition duration-300 group-hover:rotate-90"
-						>
-							<path stroke-linecap="round" stroke-linejoin="round" d="m8.25 4.5 7.5 7.5-7.5 7.5" />
-						</svg>
-					</div>
-					<p
-						class="mt-4 text-[0.925rem] opacity-0 transition delay-500 duration-500 group-hover:opacity-100"
-					>
-						Dão voz e atmosfera aos nossos jogos, criando trilhas sonoras e efeitos que enriquecem a
-						experiência do jogador.
-					</p>
-				</div>
-				<div
-					aria-hidden="true"
-					on:mouseenter={() => {
-						index = 4;
-					}}
-					class="group h-[4.2rem] w-[28rem] overflow-hidden rounded-xl border border-fuchsia-400 p-5 transition-all duration-300 hover:h-40"
-				>
-					<div class="flex items-center justify-between">
-						<span class="text-xl font-black">Design Visual</span>
-						<svg
-							xmlns="http://www.w3.org/2000/svg"
-							fill="none"
-							viewBox="0 0 24 24"
-							stroke-width="1.5"
-							stroke="currentColor"
-							class="size-6 transition duration-300 group-hover:rotate-90"
-						>
-							<path stroke-linecap="round" stroke-linejoin="round" d="m8.25 4.5 7.5 7.5-7.5 7.5" />
-						</svg>
-					</div>
-					<p
-						class="mt-4 text-[0.925rem] opacity-0 transition delay-500 duration-500 group-hover:opacity-100"
-					>
-						Cuida da identidade visual da Nawat Games, criando materiais gráficos e definindo o
-						estilo que representa a nossa marca.
-					</p>
-				</div>
+					Desenvolvem as mecânicas e o conceito dos jogos, garantindo uma experiência divertida e
+					envolvente para os jogadores.
+				</p>
 			</div>
-			<div>
-				<svg
-					class:fill-blue-500={index === 0}
-					class:fill-green-500={index === 1}
-					class:fill-rose-500={index === 2}
-					class:fill-orange-500={index === 3}
-					class:fill-fuchsia-500={index === 4}
-					class="h-[30rem] transition duration-300 ease-in-out"
-					viewBox="0 0 200 200"
-					xmlns="http://www.w3.org/2000/svg"
+			<div
+				aria-hidden="true"
+				on:mouseenter={() => {
+					index = 1;
+				}}
+				class="group h-[4.2rem] w-[28rem] overflow-hidden rounded-xl border border-green-400 p-5 transition-all duration-300 hover:h-40 hover:bg-green-500/10"
+			>
+				<div class="flex items-center justify-between">
+					<span class="text-xl font-extrabold">Game Programming</span>
+					<svg
+						xmlns="http://www.w3.org/2000/svg"
+						fill="none"
+						viewBox="0 0 24 24"
+						stroke-width="1.5"
+						stroke="currentColor"
+						class="size-6 transition duration-300 group-hover:rotate-90"
+					>
+						<path stroke-linecap="round" stroke-linejoin="round" d="m8.25 4.5 7.5 7.5-7.5 7.5" />
+					</svg>
+				</div>
+				<p
+					class="mt-4 text-[0.925rem] opacity-0 transition delay-500 duration-500 group-hover:opacity-100"
 				>
+					Responsáveis por transformar ideias em realidade, desenvolvendo a lógica e o código que
+					dão vida aos nossos jogos.
+				</p>
+			</div>
+			<div
+				aria-hidden="true"
+				on:mouseenter={() => {
+					index = 2;
+				}}
+				class="group h-[4.2rem] w-[28rem] overflow-hidden rounded-xl border border-rose-400 p-5 transition-all duration-300 hover:h-40 hover:bg-rose-500/10"
+			>
+				<div class="flex items-center justify-between">
+					<span class="text-xl font-extrabold">Game Art</span>
+					<svg
+						xmlns="http://www.w3.org/2000/svg"
+						fill="none"
+						viewBox="0 0 24 24"
+						stroke-width="1.5"
+						stroke="currentColor"
+						class="size-6 transition duration-300 group-hover:rotate-90"
+					>
+						<path stroke-linecap="round" stroke-linejoin="round" d="m8.25 4.5 7.5 7.5-7.5 7.5" />
+					</svg>
+				</div>
+				<p
+					class="mt-4 text-[0.925rem] opacity-0 transition delay-500 duration-500 group-hover:opacity-100"
+				>
+					Criam o visual dos nossos jogos, desenhando personagens, cenários e todos os elementos que
+					compõem o universo visual.
+				</p>
+			</div>
+			<div
+				aria-hidden="true"
+				on:mouseenter={() => {
+					index = 3;
+				}}
+				class="group h-[4.2rem] w-[28rem] overflow-hidden rounded-xl border border-orange-400 p-5 transition-all duration-300 hover:h-40 hover:bg-orange-500/10"
+			>
+				<div class="flex items-center justify-between">
+					<span class="text-xl font-extrabold">Game Sound</span>
+					<svg
+						xmlns="http://www.w3.org/2000/svg"
+						fill="none"
+						viewBox="0 0 24 24"
+						stroke-width="1.5"
+						stroke="currentColor"
+						class="size-6 transition duration-300 group-hover:rotate-90"
+					>
+						<path stroke-linecap="round" stroke-linejoin="round" d="m8.25 4.5 7.5 7.5-7.5 7.5" />
+					</svg>
+				</div>
+				<p
+					class="mt-4 text-[0.925rem] opacity-0 transition delay-500 duration-500 group-hover:opacity-100"
+				>
+					Dão voz e atmosfera aos nossos jogos, criando trilhas sonoras e efeitos que enriquecem a
+					experiência do jogador.
+				</p>
+			</div>
+			<div
+				aria-hidden="true"
+				on:mouseenter={() => {
+					index = 4;
+				}}
+				class="group h-[4.2rem] w-[28rem] overflow-hidden rounded-xl border border-fuchsia-400 p-5 transition-all duration-300 hover:h-40 hover:bg-fuchsia-500/10"
+			>
+				<div class="flex items-center justify-between">
+					<span class="text-xl font-extrabold">Design Visual</span>
+					<svg
+						xmlns="http://www.w3.org/2000/svg"
+						fill="none"
+						viewBox="0 0 24 24"
+						stroke-width="1.5"
+						stroke="currentColor"
+						class="size-6 transition duration-300 group-hover:rotate-90"
+					>
+						<path stroke-linecap="round" stroke-linejoin="round" d="m8.25 4.5 7.5 7.5-7.5 7.5" />
+					</svg>
+				</div>
+				<p
+					class="mt-4 text-[0.925rem] opacity-0 transition delay-500 duration-500 group-hover:opacity-100"
+				>
+					Cuida da identidade visual da Nawat Games, criando materiais gráficos e definindo o estilo
+					que representa a nossa marca.
+				</p>
+			</div>
+		</div>
+		<div class="relative">
+			<svg
+				class:opacity-0={index === null}
+				class:fill-blue-500={index === 0}
+				class:fill-green-500={index === 1}
+				class:fill-rose-500={index === 2}
+				class:fill-orange-500={index === 3}
+				class:fill-fuchsia-500={index === 4}
+				class="h-[35rem] transition duration-300 ease-in-out"
+				viewBox="0 0 200 200"
+				xmlns="http://www.w3.org/2000/svg"
+			>
+				<path
+					d={index != null
+						? paths[index]
+						: 'M50.8,-69.7C65.3,-59.4,76,-43.8,81.5,-26.5C87,-9.3,87.3,9.6,82,26.9C76.7,44.1,65.7,59.7,51.1,70.6C36.5,81.5,18.2,87.7,0.5,86.9C-17.2,86.2,-34.3,78.5,-49.1,67.7C-63.9,56.8,-76.3,42.8,-82.1,26.4C-87.8,9.9,-86.9,-9,-81.1,-26.2C-75.2,-43.3,-64.6,-58.8,-50.2,-69C-35.9,-79.3,-18,-84.3,0.1,-84.5C18.2,-84.6,36.4,-79.9,50.8,-69.7Z'}
+					transform="translate(100 100)"
+					style="transition: d 0.3s ease-in-out;"
+				/>
+			</svg>
+			<div class="absolute inset-0 flex items-center justify-center">
+				<svg class="h-40" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 184.4 132.48">
 					<path
-						d={paths[index]}
-						transform="translate(100 100)"
-						style="transition: d 0.3s ease-in-out;"
+						d="M179.23 38.39c-.72-.75-2.45-2.57-4.5-2.35-2.28.24-4.02 2.84-4.5 5-.31 1.38-.03 2.2.32 4.27.56 3.36.69 6.38.64 7.8-.12 4.08-1.97 7.12-3.54 9.71-1.57 2.58-2.89 3.87-4.07 4.97-.47-.93-.98-1.85-1.52-2.76 3.95-4.97 4.27-17.97 4.06-23.41-.19-4.69-1.1-11.91-4.66-19.67-2.85-6.2-6.07-9.86-9.81-14.1C144.93.2 141.98-.01 140.88 0c-3.07.04-6.47 2.06-6.75 4.35-.19 1.56 1.14 2.49 4.5 6.96 1.35 1.8 2.5 3.38 3.54 5.05 2.17 3.49 3.26 6.55 4.02 8.7.9 2.55 2.44 6.94 2.73 12.01.36 6.17-1.37 9.08-2.25 12.14-.99-.68-2-1.35-3.05-1.99-.14-.78-.34-1.7-.62-2.79-1.21-4.75-2.69-8.2-3.05-9.05-2.65-6.11-4.08-9.29-7.56-11.81-1.32-.96-3.53-2.56-5.47-1.84-1.95.72-2.76 3.48-2.57 5.52.19 2.05 1.33 2.63 2.57 5.06 1.49 2.91 1.68 5.6 1.75 7.77-10.56-3.82-22.68-6-35.56-6s-25.39 2.25-36.08 6.2c.07-2.19.22-4.96 1.76-7.96 1.25-2.43 2.38-3.01 2.57-5.06.19-2.04-.62-4.8-2.57-5.52-1.93-.72-4.15.88-5.47 1.84-3.48 2.52-4.91 5.71-7.56 11.81-.37.85-1.85 4.3-3.05 9.05-.32 1.27-.54 2.29-.68 3.15-.99.62-1.96 1.27-2.9 1.93-.85-3.18-2.71-6.08-2.34-12.44.3-5.06 1.84-9.46 2.73-12.01.76-2.15 1.85-5.21 4.02-8.7 1.04-1.67 2.19-3.25 3.54-5.05 3.36-4.47 4.69-5.41 4.5-6.96-.27-2.3-3.67-4.32-6.74-4.36-1.1-.02-4.05.2-10.77 7.83-3.73 4.24-6.96 7.9-9.81 14.1-3.57 7.75-4.48 14.98-4.66 19.67-.22 5.57.13 19.08 4.36 23.76a38.79 38.79 0 0 0-1.9 3.6c-1.5-1.49-3.18-2.62-5.32-6.15-1.57-2.58-3.41-5.63-3.54-9.71-.04-1.41.08-4.43.64-7.8.35-2.07.63-2.89.32-4.27-.49-2.16-2.23-4.76-4.5-5-2.05-.22-3.79 1.6-4.5 2.35-4.76 5-8.31 19.78-.96 35.74C7.37 81 14.78 92.93 20.02 91.93c6.18 23.04 36.54 40.54 73.09 40.54s67.03-17.57 73.12-40.68c5.01-1.52 11.15-11.58 13.95-17.67 7.34-15.96 3.8-30.74-.96-35.74ZM77.72 103.78c-.28 1.29-2.53 1.78-7.03 2.75-4.61 1-8.17 1.77-12.01.12-.81-.35-2.92-1.28-4.75-3.34-1.86-2.09-1.57-3.25-3.46-4.86-.75-.64-1.03-.66-4.86-2.46-4.23-1.99-4.48-2.24-4.45-2.46.12-.95 5.53-1.17 9.61-1 3.52.15 8.07.38 13.66 2.34 5.42 1.9 13.9 6.16 13.3 8.91Zm62.4-7.79c-3.83 1.8-4.12 1.82-4.86 2.46-1.89 1.61-1.6 2.77-3.46 4.86-1.83 2.06-3.94 2.99-4.75 3.34-3.85 1.65-7.4.88-12.01-.12-4.5-.98-6.75-1.46-7.03-2.75-.6-2.75 7.88-7.01 13.3-8.91 5.59-1.96 10.14-2.19 13.66-2.34 4.08-.18 9.49.04 9.61 1 .03.22-.22.47-4.45 2.46Z"
 					/>
 				</svg>
 			</div>

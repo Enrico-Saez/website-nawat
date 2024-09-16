@@ -12,5 +12,8 @@ import vercel from '@astrojs/vercel/serverless';
 export default defineConfig({
   integrations: [tailwind(), svelte(), db()],
   output: 'hybrid',
+  security: {
+    checkOrigin: true
+  },
   adapter: vercel()
 });
