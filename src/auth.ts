@@ -1,3 +1,5 @@
+/*
+
 import { Lucia } from 'lucia';
 
 const adapter = new BetterSQLite3Adapter(db); // your adapter
@@ -27,3 +29,5 @@ const url: URL = await entraId.createAuthorizationURL(state, codeVerifier, {
 });
 const tokens: MicrosoftEntraIdTokens = await entraId.validateAuthorizationCode(code, codeVerifier);
 const tokens: MicrosoftEntraIdTokens = await entraId.refreshAccessToken(refreshToken);
+
+*/
