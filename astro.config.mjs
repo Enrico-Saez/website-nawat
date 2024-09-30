@@ -1,4 +1,4 @@
-import { defineConfig } from 'astro/config';
+import { defineConfig, envField } from 'astro/config';
 
 import tailwind from '@astrojs/tailwind';
 
@@ -11,9 +11,16 @@ import vercel from '@astrojs/vercel/serverless';
 // https://astro.build/config
 export default defineConfig({
   integrations: [tailwind(), svelte(), db()],
-  output: 'hybrid',
+  output: 'static',
   security: {
     checkOrigin: true
+  },
+  env: {
+    schema: {
+      TENANT_ID: envField.string({ context: "server", access: "secret"}),
+      CLIENT_ID: envField.string({ context: "server", access: "secret" }),
+      CLIENT_SECRET: envField.string({ context: "server", access: "secret" }),
+    }
   },
   adapter: vercel()
 });

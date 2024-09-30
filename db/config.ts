@@ -1,6 +1,6 @@
 import { defineDb, defineTable, column } from 'astro:db';
 
-const Member = defineTable({
+const User = defineTable({
 	columns: {
 		id: column.number({ primaryKey: true, autoIncrement: true }),
 		url: column.text({ unique: true }),
@@ -9,6 +9,16 @@ const Member = defineTable({
 		departure_date: column.date()
 	}
 });
+
+const Session = defineTable({
+	columns: {
+	  id: column.text({ primaryKey: true }),
+	  expiresAt: column.date(),
+	  userId: column.number({
+		references: () => User.columns.id,
+	  }),
+	},
+  });
 
 const RecruitmentProcess = defineTable({
 	columns: {
@@ -20,5 +30,5 @@ const RecruitmentProcess = defineTable({
 });
 
 export default defineDb({
-	tables: { Member, RecruitmentProcess }
+	tables: { User, Session, RecruitmentProcess }
 });
