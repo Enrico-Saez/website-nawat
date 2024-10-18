@@ -42,7 +42,7 @@
 					</svg>
 				</div>
 				<p
-					class="mt-4 text-[0.925rem] opacity-0 transition delay-500 duration-500 group-hover:opacity-100"
+					class="mt-4 text-[0.925rem] opacity-0 transition delay-300 duration-500 group-hover:opacity-100"
 				>
 					Desenvolvem as mecânicas e o conceito dos jogos, garantindo uma experiência divertida e
 					envolvente para os jogadores.
@@ -69,7 +69,7 @@
 					</svg>
 				</div>
 				<p
-					class="mt-4 text-[0.925rem] opacity-0 transition delay-500 duration-500 group-hover:opacity-100"
+					class="mt-4 text-[0.925rem] opacity-0 transition delay-300 duration-500 group-hover:opacity-100"
 				>
 					Responsáveis por transformar ideias em realidade, desenvolvendo a lógica e o código que
 					dão vida aos nossos jogos.
@@ -96,7 +96,7 @@
 					</svg>
 				</div>
 				<p
-					class="mt-4 text-[0.925rem] opacity-0 transition delay-500 duration-500 group-hover:opacity-100"
+					class="mt-4 text-[0.925rem] opacity-0 transition delay-300 duration-500 group-hover:opacity-100"
 				>
 					Criam o visual dos nossos jogos, desenhando personagens, cenários e todos os elementos que
 					compõem o universo visual.
@@ -123,7 +123,7 @@
 					</svg>
 				</div>
 				<p
-					class="mt-4 text-[0.925rem] opacity-0 transition delay-500 duration-500 group-hover:opacity-100"
+					class="mt-4 text-[0.925rem] opacity-0 transition delay-300 duration-500 group-hover:opacity-100"
 				>
 					Dão voz e atmosfera aos nossos jogos, criando trilhas sonoras e efeitos que enriquecem a
 					experiência do jogador.
@@ -150,7 +150,7 @@
 					</svg>
 				</div>
 				<p
-					class="mt-4 text-[0.925rem] opacity-0 transition delay-500 duration-500 group-hover:opacity-100"
+					class="mt-4 text-[0.925rem] opacity-0 transition delay-300 duration-500 group-hover:opacity-100"
 				>
 					Cuida da identidade visual da Nawat Games, criando materiais gráficos e definindo o estilo
 					que representa a nossa marca.

@@ -8,21 +8,23 @@ import gradientBg from '../../public/images/Gradient01.png';
 
 <Layout title="Nawat Games">
 	<main>
-		<div class="mx-auto max-w-5xl pb-32 pt-48">
-			<Image src={gradientBg} alt="" />
-			<h1 class="text-6xl font-bold">Apaixonados pela<br />criação de jogos</h1>
-			<p class="mt-5 max-w-lg text-text/70">
-				Somos o núcleo de desenvolvimento de jogos do Instituto Mauá de Tecnologia. Unidos pela
-				vontade de produzir...
-			</p>
-			<div class="mt-10 flex space-x-4">
-				<button class="bg-secondary px-7 py-3.5 font-medium text-text">Nossos Jogos</button>
-				<button class="bg-primary px-7 py-3.5 font-medium text-neutral-900"
-					>Torne-se um Membro</button
-				>
+		<div class="relative">
+			<div class="mx-auto max-w-5xl pb-40 pt-48">
+				<Image class="absolute inset-0 -z-10 size-full object-cover" src={gradientBg} alt="" />
+				<h1 class="text-6xl font-extrabold">Apaixonados pela<br />criação de jogos</h1>
+				<p class="mt-5 max-w-lg text-text/80">
+					Somos o núcleo de desenvolvimento de jogos do Instituto Mauá de Tecnologia. Unidos pela
+					vontade de produzir...
+				</p>
+				<div class="mt-10 flex space-x-4">
+					<button class="bg-secondary px-7 py-3.5 font-medium text-text">Nossos Jogos</button>
+					<button class="bg-primary px-7 py-3.5 font-medium text-neutral-900"
+						>Torne-se um Membro</button
+					>
+				</div>
 			</div>
 		</div>
-		<NawatAreas client:only="svelte" />
+		<NawatAreas client:load />
 		<MembroCTA />
 	</main>
 </Layout>

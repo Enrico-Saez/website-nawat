@@ -58,7 +58,7 @@
 			>
 				<span class="transition group-hover:text-text">Acesse seu Perfil</span>
 				<span
-					class="relative flex size-8 items-center justify-center rounded-full border-2 border-neutral-900 transition group-hover:border-text"
+					class="relative flex size-8 items-center justify-center overflow-hidden rounded-full border-2 border-neutral-900 transition group-hover:border-text"
 				>
 					<span
 						class="absolute bottom-0 h-1 w-4 rounded-t-full bg-neutral-900 transition group-hover:bg-text"

@@ -1,10 +1,13 @@
 ---
 export const prerender = false;
 import Layout from '../../layouts/Layout.astro';
+import { db, User } from 'astro:db';
 
 const { membro } = Astro.params;
+const users = await db.select().from(User);
+console.log(users);
 ---
 
 <Layout title=`${membro} | Nawat Games`>
-	<h1>{membro}</h1>
+	<h1>{users}</h1>
 </Layout>
