@@ -5,6 +5,9 @@ const User = defineTable({
 		id: column.number({ primaryKey: true, autoIncrement: true }),
 		url: column.text({ unique: true }),
 		name: column.text(),
+		username: column.text(),
+		email: column.text({ unique: true }),
+ 		passwordHash: column.text(),
 		entry_date: column.date(),
 		departure_date: column.date()
 	}

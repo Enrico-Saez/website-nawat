@@ -1,11 +1,30 @@
 <script lang="ts">
 	import { onMount } from 'svelte';
 
+	let username = $state('');
+	let password = $state('');
 	let navDown: boolean = $state(false);
 	let loginFormDialog: HTMLDialogElement;
+	let props = $props();
+	let displayName = props.displayName;
 
 	function handleScroll() {
 		navDown = !(window.scrollY === 0);
+	}
+
+	async function startLoginProcess() {
+		const res = await fetch('/auth/login', {
+			method: 'POST',
+			body: JSON.stringify({ username, password }),
+			headers: { 'Content-Type': 'application/json' },
+		});
+		const data = await res.json();
+
+		if (data.success) {
+		alert('Login successful!');
+		} else {
+		alert(data.error);
+		}
 	}
 
 	onMount(() => {
@@ -57,7 +76,7 @@
 			<button onclick={() => loginFormDialog.showModal()}
 				class="group flex items-center space-x-3 bg-primary px-5 py-1.5 text-sm font-medium text-neutral-900 transition duration-300 hover:bg-primary/20"
 			>
-				<span class="transition group-hover:text-text">Acesse seu Perfil</span>
+				<span class="transition group-hover:text-text">{displayName ? displayName : "Acesse seu Perfil"}</span>
 				<span
 					class="relative flex size-8 items-center justify-center overflow-hidden rounded-full border-2 border-neutral-900 transition group-hover:border-text"
 				>
@@ -85,7 +104,7 @@
 
 <dialog bind:this={loginFormDialog} class="bg-background rounded-xl p-8">
 	<h1 class="text-text">Acesse seu perfil de membro.</h1>
-	<input type="text" />
-	<input type="password" />
-	<button class="bg-primary text-background">Fazer Login</button>
+	<input type="username" bind:value={username}  />
+	<input type="password" bind:value={password}  />
+	<button onclick={startLoginProcess} class="bg-primary text-background">Fazer Login</button>
 </dialog>

@@ -19,7 +19,7 @@ const { title } = Astro.props;
 		<title>{title}</title>
 	</head>
 	<body class="bg-background fill-text text-text selection:bg-primary selection:text-neutral-900">
-		<Navbar client:load />
+		<Navbar client:load displayname={Astro.locals.user} />
 		<slot />
 	</body>
 </html>
