@@ -102,9 +102,18 @@
 	</div>
 </nav>
 
-<dialog bind:this={loginFormDialog} class="bg-background rounded-xl p-8">
-	<h1 class="text-text">Acesse seu perfil de membro.</h1>
-	<input type="username" bind:value={username}  />
-	<input type="password" bind:value={password}  />
-	<button onclick={startLoginProcess} class="bg-primary text-background">Fazer Login</button>
+<dialog bind:this={loginFormDialog} class="bg-background rounded-xl border border-text/50 p-16 backdrop:blur-md">
+	<button onclick={() => loginFormDialog.close()} aria-label="Fechar" class="absolute right-3 top-3 rounded-full hover:bg-text/30 transition p-1">
+		<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6 text-text fill-text">
+			<path stroke-linecap="round" stroke-linejoin="round" d="M6 18 18 6M6 6l12 12" />
+		</svg>
+	</button>
+	<h1 class="text-text font-extrabold text-xl">Acesse seu perfil de membro.</h1>
+	<div class="flex flex-col mt-6 *:rounded-full *:w-72 *:placeholder:italic *:px-4 *:py-1.5 space-y-4">
+		<input placeholder="usuário" type="text" bind:value={username} />
+		<input placeholder="senha" type="password" bind:value={password} />
+	</div>
+	<div class="flex mt-6 justify-center items-center space-x-2">
+		<button onclick={startLoginProcess} class="bg-primary text-background py-3 px-8 font-medium">Entrar</button>
+	</div>
 </dialog>
