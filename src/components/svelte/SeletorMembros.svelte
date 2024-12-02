@@ -1,13 +1,13 @@
 <script lang="ts">
 	import { membros } from '../../lib/membros.ts';
 
-	let selectedButton: number | null = null;
-	let searchString: string = '';
+	let selectedButton: number | null = $state(null);
+	let searchString: string = $state('');
 
-	let area: string = 'Todos os membros';
+	let area: string = $state('Todos os membros');
 	let description: string =
-		'Todos os membros que já passaram pela Nawat Games, contribuindo com suas ideias e seus trabalhos.';
-	let bgColor: string = 'bg-secondary';
+		$state('Todos os membros que já passaram pela Nawat Games, contribuindo com suas ideias e seus trabalhos.');
+	let bgColor: string = $state('bg-secondary');
 
 	function onButtonClicked(i: number) {
 		if (selectedButton === i) {
@@ -96,27 +96,27 @@
 	<div class="mx-auto max-w-3xl py-16">
 		<div class="mx-auto flex justify-between *:rounded-full *:border-2 *:px-4 *:py-1 *:transition">
 			<button
-				on:click={() => onButtonClicked(0)}
+				onclick={() => onButtonClicked(0)}
 				class="border-blue-400/80 {selectedButton === 0 ? 'btn-selected bg-blue-600' : ''}"
 				>Game Design</button
 			>
 			<button
-				on:click={() => onButtonClicked(1)}
+				onclick={() => onButtonClicked(1)}
 				class="border-green-400/80 {selectedButton === 1 ? 'btn-selected bg-green-600' : ''}"
 				>Game Programming</button
 			>
 			<button
-				on:click={() => onButtonClicked(2)}
+				onclick={() => onButtonClicked(2)}
 				class="border-rose-400/80 {selectedButton === 2 ? 'btn-selected bg-rose-600' : ''}"
 				>Game Art</button
 			>
 			<button
-				on:click={() => onButtonClicked(3)}
+				onclick={() => onButtonClicked(3)}
 				class="border-orange-400/80 {selectedButton === 3 ? 'btn-selected bg-orange-600' : ''}"
 				>Game Sound</button
 			>
 			<button
-				on:click={() => onButtonClicked(4)}
+				onclick={() => onButtonClicked(4)}
 				class="border-fuchsia-400/80 {selectedButton === 4 ? 'btn-selected bg-fuchsia-600' : ''}"
 				>Design Visual</button
 			>

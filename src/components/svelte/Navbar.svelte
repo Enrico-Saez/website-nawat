@@ -1,7 +1,7 @@
 <script lang="ts">
 	import { onMount } from 'svelte';
 
-	let navDown: boolean = false;
+	let navDown: boolean = $state(false);
 
 	function handleScroll() {
 		navDown = !(window.scrollY === 0);

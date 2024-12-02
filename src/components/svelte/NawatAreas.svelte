@@ -6,7 +6,7 @@
 		'M45.8,-54.3C61.3,-51.8,77.2,-41,75.7,-28.6C74.2,-16.2,55.4,-2.2,46.6,12.1C37.8,26.4,39.1,40.9,33,49.6C26.9,58.3,13.4,61.1,-2.8,64.9C-19,68.8,-38,73.6,-44.8,65.1C-51.6,56.7,-46.3,35,-49.6,17.8C-52.8,0.6,-64.6,-12.1,-65.7,-25.3C-66.9,-38.5,-57.4,-52.2,-44.6,-55.6C-31.9,-59.1,-15.9,-52.3,-0.4,-51.8C15.1,-51.2,30.3,-56.9,45.8,-54.3Z',
 		'M32.6,-47.6C41.4,-38.4,47.4,-27.8,51.3,-16.5C55.2,-5.2,57.1,7,53.8,17.5C50.4,28.1,41.9,37,32.1,43.7C22.2,50.5,11.1,55,-3.1,59.4C-17.4,63.7,-34.8,67.8,-47.7,62C-60.6,56.3,-68.9,40.7,-67.5,26.3C-66.1,12,-55,-1.1,-51.1,-17.6C-47.1,-34.1,-50.4,-53.9,-43.1,-63.7C-35.7,-73.4,-17.9,-73.1,-3,-68.9C11.8,-64.8,23.7,-56.8,32.6,-47.6Z'
 	];
-	let index: number | null = null;
+	let index: number | null = $state(null);
 </script>
 
 <div class="mx-auto max-w-5xl py-32">
@@ -23,7 +23,7 @@
 		<div class="space-y-4">
 			<div
 				aria-hidden="true"
-				on:mouseenter={() => {
+				onmouseenter={() => {
 					index = 0;
 				}}
 				class="group h-[4.2rem] w-[28rem] overflow-hidden rounded-xl border border-blue-400 p-5 transition-all duration-300 hover:h-40 hover:bg-blue-500/10"
@@ -50,7 +50,7 @@
 			</div>
 			<div
 				aria-hidden="true"
-				on:mouseenter={() => {
+				onmouseenter={() => {
 					index = 1;
 				}}
 				class="group h-[4.2rem] w-[28rem] overflow-hidden rounded-xl border border-green-400 p-5 transition-all duration-300 hover:h-40 hover:bg-green-500/10"
@@ -77,7 +77,7 @@
 			</div>
 			<div
 				aria-hidden="true"
-				on:mouseenter={() => {
+				onmouseenter={() => {
 					index = 2;
 				}}
 				class="group h-[4.2rem] w-[28rem] overflow-hidden rounded-xl border border-rose-400 p-5 transition-all duration-300 hover:h-40 hover:bg-rose-500/10"
@@ -104,7 +104,7 @@
 			</div>
 			<div
 				aria-hidden="true"
-				on:mouseenter={() => {
+				onmouseenter={() => {
 					index = 3;
 				}}
 				class="group h-[4.2rem] w-[28rem] overflow-hidden rounded-xl border border-orange-400 p-5 transition-all duration-300 hover:h-40 hover:bg-orange-500/10"
@@ -131,7 +131,7 @@
 			</div>
 			<div
 				aria-hidden="true"
-				on:mouseenter={() => {
+				onmouseenter={() => {
 					index = 4;
 				}}
 				class="group h-[4.2rem] w-[28rem] overflow-hidden rounded-xl border border-fuchsia-400 p-5 transition-all duration-300 hover:h-40 hover:bg-fuchsia-500/10"
