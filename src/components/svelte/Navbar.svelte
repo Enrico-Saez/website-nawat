@@ -2,6 +2,7 @@
 	import { onMount } from 'svelte';
 
 	let navDown: boolean = $state(false);
+	let loginFormDialog: HTMLDialogElement;
 
 	function handleScroll() {
 		navDown = !(window.scrollY === 0);
@@ -23,7 +24,7 @@
 >
 	<div class="grid-cols mx-auto grid h-16 max-w-6xl grid-cols-12 items-center">
 		<div class="col-span-3 flex">
-			<a href="/">
+			<a href="/" aria-label="Home">
 				<svg class="h-7" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 558 106">
 					<g fill="#FFF" clip-path="url(#a)">
 						<path
@@ -53,7 +54,7 @@
 			<a href="/seja-membro">Seja um membro</a>
 		</div>
 		<div class="col-span-3 justify-self-end">
-			<button
+			<button onclick={() => loginFormDialog.showModal()}
 				class="group flex items-center space-x-3 bg-primary px-5 py-1.5 text-sm font-medium text-neutral-900 transition duration-300 hover:bg-primary/20"
 			>
 				<span class="transition group-hover:text-text">Acesse seu Perfil</span>
@@ -81,3 +82,10 @@
 		</div>
 	</div>
 </nav>
+
+<dialog bind:this={loginFormDialog} class="bg-background rounded-xl p-8">
+	<h1 class="text-text">Acesse seu perfil de membro.</h1>
+	<input type="text" />
+	<input type="password" />
+	<button class="bg-primary text-background">Fazer Login</button>
+</dialog>
